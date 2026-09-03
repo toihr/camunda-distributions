@@ -24,7 +24,6 @@ services:
     ports:
       - "26500:26500"
       - "9600:9600"
-      - "8080:8080"
     environment:
       - JAVA_TOOL_OPTIONS="-XX:+PrintFlagsFinal"
     env_file:
