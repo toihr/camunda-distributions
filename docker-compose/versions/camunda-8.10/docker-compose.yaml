@@ -32,7 +32,6 @@ services:
         target: /usr/local/camunda/config/application.yaml
     networks:
       - camunda   # internal: connectors reach this by service name
-      - coolify   # external: Traefik reaches port 8080 here
     depends_on:
       camunda-data-init:
         condition: service_completed_successfully
